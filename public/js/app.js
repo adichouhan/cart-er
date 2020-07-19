@@ -49749,6 +49749,30 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+//
+// import 'core-js/stable'
+// import Vue from 'vue'
+// import App from './src/App'
+// import router from './src/router'
+// import CoreuiVue from '@coreui/vue'
+// import { iconsSet as icons } from './src/assets/icons/icons.js'
+// import store from './src/store'
+//
+// Vue.config.performance = true
+// Vue.use(CoreuiVue)
+// Vue.prototype.$log = console.log.bind(console)
+//
+// new Vue({
+//     el: '#app',
+//     router,
+//     store,
+//     icons,
+//     template: '<App/>',
+//     components: {
+//         App
+//     }
+// })
+//
 
 var app = new Vue({
   el: '#app'
@@ -49888,8 +49912,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/monad/Documents/cart-er/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/monad/Documents/cart-er/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/monad/Documents/project/cart-er/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/monad/Documents/project/cart-er/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
