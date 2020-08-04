@@ -20,7 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('App', require('./src/App.vue').default);
+Vue.component('app', require('./src/App.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -40,17 +40,21 @@ Vue.config.performance = true
 Vue.use(CoreuiVue)
 Vue.prototype.$log = console.log.bind(console)
 
-new Vue({
+// new Vue({
+//     el: '#app',
+//     router,
+//     store,
+//     icons,
+//     // template: '<App/>',
+//     // components: {
+//     //     App
+//     // }
+// })
+//
+
+const app = new Vue({
     el: '#app',
     router,
     store,
     icons,
-    // template: '<App/>',
-    // components: {
-    //     App
-    // }
-})
-//
-// const app = new Vue({
-//     el: '#app',
-// });
+});

@@ -1,22 +1,19 @@
-import 'core-js/stable'
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import CoreuiVue from '@coreui/vue'
-import { iconsSet as icons } from './assets/icons/icons.js'
-import store from './store'
+import BootstrapVue from 'bootstrap-vue'
 
-Vue.config.performance = true
-Vue.use(CoreuiVue)
-Vue.prototype.$log = console.log.bind(console)
+Vue.use(BootstrapVue)
 
+Vue.config.productionTip = false
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  store,
-  icons,
-  template: '<App/>',
   components: {
     App
-  }
+  },
+  template: '<App/>'
 })
