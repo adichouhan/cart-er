@@ -3,10 +3,16 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+import Vue from 'vue'
+import App from './src/App'
+import router from './src/router'
+import BootstrapVue from 'bootstrap-vue'
 require('./bootstrap');
 
 window.Vue = require('vue');
+Vue.use(BootstrapVue);
+
+Vue.config.productionTip = false;
 
 /**
  * The following block of code may be used to automatically register your
@@ -28,33 +34,12 @@ Vue.component('app', require('./src/App.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 //
-import 'core-js/stable'
-import Vue from 'vue'
-import App from './src/App'
-import router from './src/router'
-import CoreuiVue from '@coreui/vue'
-import { iconsSet as icons } from './src/assets/icons/icons.js'
-import store from './src/store'
 
-Vue.config.performance = true
-Vue.use(CoreuiVue)
-Vue.prototype.$log = console.log.bind(console)
-
-// new Vue({
+// const app = new Vue({
 //     el: '#app',
-//     router,
-//     store,
-//     icons,
-//     // template: '<App/>',
-//     // components: {
-//     //     App
-//     // }
-// })
-//
+// });
 
-const app = new Vue({
+new Vue({
     el: '#app',
-    router,
-    store,
-    icons,
-});
+    router
+})
