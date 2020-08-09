@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // Dashboard Components
 import dashboard from '../views/dashboard'
+import product_list from '../components/products/product_list'
 
 // Widgets
 import widgets from '../views/widgets'
@@ -130,6 +131,11 @@ export default new Router({
     path: '/tabs',
     name: 'tabs',
     component: tabs
+  },
+  {
+      path: '/product_list',
+      name: 'product_list',
+      component: product_list
   },
   {
     path: '/tooltips',

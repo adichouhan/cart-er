@@ -27,6 +27,7 @@ Vue.config.productionTip = false;
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('app', require('./src/App.vue').default);
+Vue.component('admin', require('./src/Admin.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -41,5 +42,10 @@ Vue.component('app', require('./src/App.vue').default);
 
 new Vue({
     el: '#app',
+    router
+})
+
+new Vue({
+    el: '#admin',
     router
 })
