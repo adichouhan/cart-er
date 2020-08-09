@@ -12,11 +12,10 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function getIndex()
     {
         $arrProducts = Product::all();
-
-        return view('');
+        return response()->json($arrProducts);
     }
 
     /**

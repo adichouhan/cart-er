@@ -9,7 +9,7 @@
                         <p class="card-description">
                             Use <code>hover striped</code> props for striped and hoverable styles
                         </p>
-                        <b-table striped hover responsive :items="items"></b-table>
+                        <b-table striped hover responsive :items="arrProductList"></b-table>
                     </div>
                 </div>
             </div>
@@ -19,6 +19,7 @@
 </template>
 
 <script lang="js">
+    import { mapState } from 'vuex';
     const itemsTwo = [
         { Status: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
         { Status: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
@@ -39,6 +40,7 @@
         { Status: false, age: 29, first_name: 'Dick', last_name: 'Dunlap' }
     ]
     export default {
+
         name: 'tables',
         data () {
             return {
@@ -66,7 +68,20 @@
                     }
                 }
             }
-        }
+        },
+        created() {
+            this.getProductList();
+        },
+        methods:{
+            getProductList() {
+                this.$store.dispatch('getProductList');
+            }
+        },
+        computed: {
+            ...mapState([
+                'arrProductList',
+            ]),
+        },
     }
 </script>
 

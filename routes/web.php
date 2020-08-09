@@ -19,3 +19,9 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('Admin.main_admin');
 });
+Route::group(['namespace' => '\App\Http\Controllers' ], function() {
+
+    Route::get('/product_list', 'ProductController@getIndex');
+
+
+});

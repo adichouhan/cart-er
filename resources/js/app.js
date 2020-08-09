@@ -7,6 +7,8 @@ import Vue from 'vue'
 import App from './src/App'
 import router from './src/router'
 import BootstrapVue from 'bootstrap-vue'
+
+import { store } from './src/store/store.js';
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -40,12 +42,15 @@ Vue.component('admin', require('./src/Admin.vue').default);
 //     el: '#app',
 // });
 
-new Vue({
-    el: '#app',
-    router
-})
+// new Vue({
+//     el: '#app',
+//     router,
+//     store
+//
+// })
 
 new Vue({
     el: '#admin',
-    router
+    router,
+    store
 })
