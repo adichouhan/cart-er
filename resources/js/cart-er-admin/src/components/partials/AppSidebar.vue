@@ -13,7 +13,7 @@
             </div>
           </div>
         </li>
-          <li class="nav-item"><router-link class="nav-link" to="/product_list"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Product</span></router-link></li>
+          <li class="nav-item"><router-link class="nav-link" to="/products"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Product</span></router-link></li>
 
           <li class="nav-item"><router-link class="nav-link" to="/"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Dashboard</span></router-link></li>
 
