@@ -5,7 +5,7 @@
  */
 import Vue from 'vue'
 import App from './src/App'
-import router from './src/router'
+import router from './cart-er-admin/src/router/index'
 import BootstrapVue from 'bootstrap-vue'
 
 import { store } from './cart-er-admin/src/store/store.js';
@@ -30,6 +30,8 @@ Vue.config.productionTip = false;
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('app', require('./src/App.vue').default);
 Vue.component('admin', require('./cart-er-admin/src/Admin.vue').default);
+Vue.component('product_list', require('./cart-er-admin/src/components/products/product_list').default);
+Vue.component('create_product', require('./cart-er-admin/src/components/products/createFrom').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

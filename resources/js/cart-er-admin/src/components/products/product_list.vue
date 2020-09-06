@@ -1,15 +1,39 @@
 <template lang="html">
-
     <section class="tables">
         <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
+            <div class="col-12 grid-margin">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Product List</h4>
-                        <p class="card-description">
-                            Use <code>hover striped</code> props for striped and hoverable styles
-                        </p>
-                        <b-table striped hover responsive :items="arrProductList"></b-table>
+                        <h5 class="card-title mb-4">Products</h5>
+                        <a class="btn btn-success" href="/admin/create_product"><span class="menu-title">Add Product</span></a>
+                        <div class="table-responsive">
+                            <table class="table center-aligned-table">
+                                <thead>
+                                <tr>
+                                    <th class="border-bottom-0">Product No</th>
+                                    <th class="border-bottom-0">Product Name</th>
+                                    <th class="border-bottom-0">Description</th>
+                                    <th class="border-bottom-0">Price</th>
+                                    <th class="border-bottom-0">Units</th>
+                                    <th class="border-bottom-0">Image</th>
+                                    <th class="border-bottom-0"></th>
+                                    <th class="border-bottom-0"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr v-for="objProduct in arrProductList" >
+                                    <td>{{ objProduct.id }}</td>
+                                    <td>{{ objProduct.name }}</td>
+                                    <td>{{ objProduct.description }}</td>
+                                    <td>{{ objProduct.price }}</td>
+                                    <td>{{ objProduct.units }}</td>
+                                    <td><img :src="objProduct.image"></td>
+                                    <td><a href="#" class="btn btn-outline-success btn-sm">View Product</a></td>
+                                    <td><a href="#" class="btn btn-outline-danger btn-sm">Delete</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -17,56 +41,13 @@
     </section>
 
 </template>
-
 <script lang="js">
     import { mapState } from 'vuex';
-    const itemsTwo = [
-        { Status: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-        { Status: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-        {
-            Status: false,
-            age: 89,
-            first_name: 'Geneva',
-            last_name: 'Wilson',
-            _rowVariant: 'danger'
-        },
-        {
-            Status: true,
-            age: 40,
-            first_name: 'Thor',
-            last_name: 'Macdonald',
-            _cellVariants: { Status: 'success', age: 'info', first_name: 'warning' }
-        },
-        { Status: false, age: 29, first_name: 'Dick', last_name: 'Dunlap' }
-    ]
     export default {
 
-        name: 'tables',
+        name: 'productlist',
         data () {
             return {
-                itemsTwo: itemsTwo,
-                items: [
-                    { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-                    { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-                    { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-                    { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }
-                ],
-                fields: {
-                    last_name: {
-                        label: 'Person last name',
-                        sortable: true
-                    },
-                    first_name: {
-                        label: 'Person first name',
-                        sortable: false
-                    },
-                    foo: {
-                        // This key overrides `foo`!
-                        key: 'age',
-                        label: 'Person age',
-                        sortable: true
-                    }
-                }
             }
         },
         created() {

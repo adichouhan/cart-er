@@ -19,9 +19,18 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('Admin.main_admin');
 });
-Route::group(['namespace' => '\App\Http\Controllers' ], function() {
+//Route::group(['namespace' => '\App\Http\Controllers' ], function() {
+//
+//    Route::get('/product_list', 'ProductController@getIndex');
+//
+//
+//});
 
-    Route::get('/product_list', 'ProductController@getIndex');
+Route::group(['namespace' => '\App\Http\Controllers\Admin' ], function() {
 
+    Route::post('/add/product', 'ProductController@getStoredProduct');
+    Route::get('admin/product_list', 'ProductController@getProductList');
+    Route::get('admin/create_product', 'ProductController@getCreateProduct');
+    Route::get('admin/get/product_list', 'ProductController@getIndex');
 
 });

@@ -15,6 +15,7 @@ class ProductController extends Controller
     public function getIndex()
     {
         $arrProducts = Product::all();
+        return view('home');
         return response()->json($arrProducts);
     }
 
