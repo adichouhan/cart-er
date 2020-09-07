@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 // Dashboard Components
 import dashboard from '../views/dashboard'
-import products from './../../../cart-er-admin/src/components/products/products'
+import productsList from './../../../cart-er-admin/src/components/products/list'
 
 // Widgets
 import widgets from '../views/widgets'
@@ -135,7 +135,7 @@ export default new Router({
   {
       path: '/products',
       name: 'products',
-      component: products
+      component: productsList
   },
   {
     path: '/tooltips',
