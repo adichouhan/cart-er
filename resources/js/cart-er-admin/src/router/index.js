@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // Dashboard Components
 import dashboard from '../views/dashboard'
 import productsList from './../../../cart-er-admin/src/components/products/list'
+import orderRouter from '../components/orders/router'
 
 // Widgets
 import widgets from '../views/widgets'
@@ -37,6 +38,7 @@ Vue.use(Router)
 
 export default new Router({
   linkActiveClass: 'active',
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'dashboard',
@@ -146,6 +148,9 @@ export default new Router({
     path: '/forms',
     name: 'forms',
     component: forms
-  }]
+  },
+      ...orderRouter
+
+  ]
 
 })
