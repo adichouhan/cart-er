@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd1d10d0-d8f9-48a9-a20a-e5d968f49823" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
@@ -14,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +27,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/createFrom.vue">
@@ -128,11 +131,22 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>@</find>
       <find>core-js/stable</find>
+<<<<<<< HEAD
       <find>@import &quot;../../../node_modules/bootstrap/scss/functions&quot;</find>
       <find>/products/product_list</find>
       <find>../components/products/product_list</find>
@@ -140,6 +154,9 @@
       <find>product_list</find>
       <find>create_product</find>
       <find>white-space</find>
+=======
+      <find>dashboard</find>
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
     </findStrings>
     <replaceStrings>
       <replace>..</replace>
@@ -158,6 +175,7 @@
         <option value="$PROJECT_DIR$/resources/js/src/App.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/Admin.vue" />
         <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/assets/scss/style.scss" />
         <option value="$PROJECT_DIR$/resources/js/src/router/index.js" />
@@ -175,6 +193,20 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" />
         <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue" />
         <option value="$PROJECT_DIR$/resources/views/Admin/product/list.blade.php" />
+=======
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/js/app-cart-er.js" />
+        <option value="$PROJECT_DIR$/resources/views/admin/admin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue" />
+        <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/products.vue" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_08_07_053005_create_products_table.php" />
+        <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/create.vue" />
+        <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/edit.vue" />
+        <option value="$PROJECT_DIR$/resources/js/cart-er-admin/src/router/index.js" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_08_07_053022_create_orders_table.php" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
       </list>
     </option>
   </component>
@@ -293,6 +325,9 @@
       <path value="$PROJECT_DIR$/vendor/laravel/passport" />
       <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
       <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -315,6 +350,7 @@
               <item name="cart-er" type="b2602c69:ProjectViewProjectNode" />
               <item name="cart-er" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="cart-er" type="b2602c69:ProjectViewProjectNode" />
               <item name="cart-er" type="462c0819:PsiDirectoryNode" />
@@ -524,6 +560,8 @@
               <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
           </expand>
           <select />
         </subPane>
@@ -541,14 +579,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/js/cart-er-admin" />
       <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/resources/js/cart-er-admin" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -591,6 +629,7 @@
       <workItem from="1595250728279" duration="3482000" />
       <workItem from="1595304334390" duration="2096000" />
       <workItem from="1596521278581" duration="1468000" />
+<<<<<<< HEAD
       <workItem from="1597326330359" duration="4135000" />
       <workItem from="1597380954948" duration="1212000" />
       <workItem from="1598954889457" duration="2968000" />
@@ -599,10 +638,25 @@
       <workItem from="1599322943562" duration="4575000" />
       <workItem from="1599400537595" duration="587000" />
       <workItem from="1599401375796" duration="1896000" />
+=======
+      <workItem from="1597380720480" duration="1574000" />
+      <workItem from="1598323620521" duration="1577000" />
+      <workItem from="1598412143880" duration="602000" />
+      <workItem from="1598421336410" duration="608000" />
+      <workItem from="1598495543240" duration="740000" />
+      <workItem from="1598496305438" duration="615000" />
+      <workItem from="1599278357075" duration="1585000" />
+      <workItem from="1599320115956" duration="585000" />
+      <workItem from="1599369513821" duration="3324000" />
+      <workItem from="1599402445855" duration="1017000" />
+      <workItem from="1599412633833" duration="536000" />
+      <workItem from="1599447361033" duration="1816000" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="48617000" />
   </component>
   <component name="ToolWindowManager">
@@ -610,6 +664,14 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3286052" />
+=======
+    <option name="totallyTimeSpent" value="47533000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24022038" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -624,7 +686,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.20941558" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26512653" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -659,6 +725,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -685,6 +752,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
     <entry file="file://$PROJECT_DIR$/resources/js/src/views/forms/forms.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -732,6 +801,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -759,6 +829,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/src/App.vue">
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
@@ -865,22 +938,79 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153255">
           <caret line="10230" column="13" selection-start-line="10230" selection-start-column="13" selection-end-line="10230" selection-end-column="13" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/.styleci.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/main.js">
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Admin.vue" />
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-270">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/views/widgets.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/getters.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app-cart-er.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -914,10 +1044,40 @@
           <caret line="19" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/views/ui-components/tables.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="83" column="8" selection-start-line="78" selection-start-column="5" selection-end-line="83" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/views/dashboard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="83" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#section#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -929,19 +1089,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+=======
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/views/forms/forms.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="294" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/create.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="294" column="11" selection-start-line="294" selection-start-column="11" selection-end-line="294" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4929">
+          <caret line="294" column="11" selection-start-line="294" selection-start-column="11" selection-end-line="294" selection-end-column="11" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="297">
           <caret line="33" column="91" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
+=======
+        <state relative-caret-position="774">
+          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app-cart-er.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
           <folding>
             <element signature="e#222#243#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/createFrom.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-678">
@@ -981,10 +1180,44 @@
           <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
           <folding>
             <element signature="e#46#82#0#PHP" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/Admin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppHeader.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1003,6 +1236,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2124">
+          <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#79#121#0" expanded="true" />
+            <element signature="e#272#322#0" expanded="true" />
+            <element signature="e#1106#1160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/cart-er-admin/src/views/ui-components/alerts.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_07_053005_create_products_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_07_053022_create_orders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+>>>>>>> 994d3f4191b6be72f78f10eed903b79ffbf86e8d
         </state>
       </provider>
     </entry>

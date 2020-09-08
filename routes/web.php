@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin', function () {
-    return view('Admin.main_admin');
+    return view('admin.admin');
 });
 //Route::group(['namespace' => '\App\Http\Controllers' ], function() {
 //

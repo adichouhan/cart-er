@@ -153,4 +153,5 @@ export default new Router({
     name: 'forms',
     component: forms
   }]
+
 })
