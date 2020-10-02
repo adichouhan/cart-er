@@ -3,9 +3,8 @@ import Router from 'vue-router'
 
 // Dashboard Components
 import dashboard from '../views/dashboard'
-import productsList from './../../../cart-er-admin/src/components/products/list'
 import orderRouter from '../components/orders/router'
-import product_list from '../components/products/product_list'
+import productRouter from '../components/products/router'
 import createFrom from '../components/products/createFrom'
 
 // Widgets
@@ -39,8 +38,8 @@ import register from '../views/sample-pages/register'
 Vue.use(Router)
 
 export default new Router({
-  linkActiveClass: 'active',
-  mode: 'history',
+  base:'/admin/',
+  mode: "hash",
   routes: [{
     path: '/',
     name: 'dashboard',
@@ -136,11 +135,7 @@ export default new Router({
     name: 'tabs',
     component: tabs
   },
-  {
-      path: '/product_list',
-      name: 'productlist',
-      component: product_list
-  },
+
   {
       path: '/create_product',
       name: 'create-product',
@@ -156,7 +151,8 @@ export default new Router({
     name: 'forms',
     component: forms
   },
-      ...orderRouter
+      ...orderRouter,
+      ...productRouter
 
   ]
 

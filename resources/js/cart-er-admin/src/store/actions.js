@@ -1,9 +1,11 @@
 import axios from 'axios'
 export default {
     getProductList({commit}) {
-        axios.get('/admin/product_list')
+        axios.get('api/admin/products')
             .then(response => {
-                commit('setProductList',response.data)
+                if(response.status == 200){
+                    commit('setProductList',response.data)
+                }
             }).catch(error => {
             console.log(error)
         })

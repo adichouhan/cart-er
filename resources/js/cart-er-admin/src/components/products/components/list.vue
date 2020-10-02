@@ -4,8 +4,15 @@
             <div class="col-12 grid-margin">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title mb-4">Products</h5>
-                        <a class="btn btn-success" href="/admin/create_product"><span class="menu-title">Add Product</span></a>
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title mb-4">Products</h5>
+                            </div>
+                            <div class="col-4">
+                                <b-button variant="primary" class="pull-right"><router-link class="nav-link" to="/product/create">Create Product</router-link></b-button>
+                            </div>
+                        </div>
+
                         <div class="table-responsive">
                             <table class="table center-aligned-table">
                                 <thead>
@@ -48,6 +55,16 @@
         name: 'productlist',
         data () {
             return {
+                items: [{
+                    text: 'Admin',
+                    href: '#'
+                }, {
+                    text: 'Manage',
+                    href: '#'
+                }, {
+                    text: 'Library',
+                    active: true
+                }]
             }
         },
         created() {

@@ -22,7 +22,6 @@ class ProductController extends Controller
     public function getStoredProduct(Request $request)
     {
         $objProduct = new Product();
-        
         $objProduct->name = $request->name;
         $objProduct->units = $request->unit;
         $objProduct->price = $request->price;

@@ -18,8 +18,12 @@ class CreateOrdersTable extends Migration
             $table->unsignedInteger('product_id');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('quantity')->default(1);
-            $table->string('address')->nullable();
-            $table->boolean('status');
+            $table->unsignedInteger('address_id')->nullable();
+            $table->boolean('order_status');
+            $table->decimal('total', 18, 4)->unsigned();
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('address_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });

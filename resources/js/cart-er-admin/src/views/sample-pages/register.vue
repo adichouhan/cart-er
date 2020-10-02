@@ -45,7 +45,12 @@
 
 <script lang="js">
 export default {
-  name: 'register'
+  name: 'register',
+  data: () => {
+    return{
+     status:'',
+    }
+  }
 }
 </script>
 
