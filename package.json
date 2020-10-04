@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^7.1.2",
-        "axios": "^0.19",
+        "axios": "^0.19.2",
         "babel-core": "^7.0.0-beta.0",
         "babel-eslint": "^8.2.1",
         "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -91,6 +91,7 @@
         "flag-icon-css": "2.9.0",
         "font-awesome": "4.7.0",
         "mdi": "2.1.19",
+        "vform": "^1.0.1",
         "vue": "~2.6.11",
         "vue-md-date-picker": "1.0.15",
         "vue-router": "~3.3.2",

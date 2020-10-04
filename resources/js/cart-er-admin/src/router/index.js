@@ -5,7 +5,7 @@ import Router from 'vue-router'
 import dashboard from '../views/dashboard'
 import orderRouter from '../components/orders/router'
 import productRouter from '../components/products/router'
-import createFrom from '../components/products/createFrom'
+
 
 // Widgets
 import widgets from '../views/widgets'
@@ -32,15 +32,14 @@ import forms from '../views/forms/forms'
 // Sample Pages
 import error404 from '../views/sample-pages/error-404'
 import error500 from '../views/sample-pages/error-500'
-import login from '../views/sample-pages/login'
+import login from '../components/login'
 import register from '../views/sample-pages/register'
 
 Vue.use(Router)
 
-export default new Router({
-  base:'/admin/',
-  mode: "hash",
-  routes: [{
+
+const routes =  [
+  {
     path: '/',
     name: 'dashboard',
     component: dashboard
@@ -137,11 +136,6 @@ export default new Router({
   },
 
   {
-      path: '/create_product',
-      name: 'create-product',
-      component: createFrom
-  },
-  {
     path: '/tooltips',
     name: 'tooltips',
     component: tooltips
@@ -151,9 +145,143 @@ export default new Router({
     name: 'forms',
     component: forms
   },
-      ...orderRouter,
-      ...productRouter
+  ...orderRouter,
+  ...productRouter
 
-  ]
+]
 
+ const router = new Router({
+  mode: 'history',
+  routes
 })
+
+router.beforeEach((to, from, next) => {
+  let isAuthenticated = false;
+  if (to.name !== 'login' && !isAuthenticated) next({ name: 'login' })
+  else next()
+})
+
+export default router;
+
+// export default new Router({
+//   base:'/admin/',
+//   mode: "hash",
+//
+//   routes: [
+//       {
+//     path: '/',
+//     name: 'dashboard',
+//     component: dashboard
+//   },
+//   {
+//     path: '/widgets',
+//     name: 'widgets',
+//     component: widgets
+//   },
+//   {
+//     path: '/404',
+//     name: 'error-404',
+//     component: error404
+//   },
+//   {
+//     path: '/500',
+//     name: 'error-500',
+//     component: error500
+//   },
+//   {
+//     path: '/login',
+//     name: 'login',
+//     component: login
+//   },
+//   {
+//     path: '/register',
+//     name: 'register',
+//     component: register
+//   },
+//   {
+//     path: '/alerts',
+//     name: 'alerts',
+//     component: alerts
+//   },
+//   {
+//     path: '/badges',
+//     name: 'badges',
+//     component: badges
+//   },
+//   {
+//     path: '/breadcrumbs',
+//     name: 'breadcrumbs',
+//     component: breadcrumbs
+//   },
+//   {
+//     path: '/buttons',
+//     name: 'buttons',
+//     component: buttons
+//   },
+//   {
+//     path: '/carousel',
+//     name: 'carousel',
+//     component: carousel
+//   },
+//   {
+//     path: '/dropdowns',
+//     name: 'dropdowns',
+//     component: dropdowns
+//   },
+//   {
+//     path: '/icons',
+//     name: 'icons',
+//     component: icons
+//   },
+//   {
+//     path: '/modals',
+//     name: 'modals',
+//     component: modals
+//   },
+//   {
+//     path: '/paginations',
+//     name: 'paginations',
+//     component: paginations
+//   },
+//   {
+//     path: '/progress',
+//     name: 'progress',
+//     component: progress
+//   },
+//   {
+//     path: '/tables',
+//     name: 'tables',
+//     component: tables
+//   },
+//   {
+//     path: '/typography',
+//     name: 'typography',
+//     component: typography
+//   },
+//   {
+//     path: '/tabs',
+//     name: 'tabs',
+//     component: tabs
+//   },
+//
+//   {
+//       path: '/create_product',
+//       name: 'create-product',
+//       component: createFrom
+//   },
+//   {
+//     path: '/tooltips',
+//     name: 'tooltips',
+//     component: tooltips
+//   },
+//   {
+//     path: '/forms',
+//     name: 'forms',
+//     component: forms
+//   },
+//       ...orderRouter,
+//       ...productRouter
+//
+//   ]
+//
+// })

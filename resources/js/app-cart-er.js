@@ -6,8 +6,9 @@
 import Vue from 'vue'
 import router from './cart-er-admin/src/router'
 import BootstrapVue from 'bootstrap-vue'
+import axios from 'axios'
 
-import { store } from './cart-er-admin/src/store/store.js';
+import { store } from './cart-er-admin/src/store/';
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -15,6 +16,15 @@ Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 
+
+
+let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+} else {
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -36,18 +46,6 @@ Vue.component('admin', require('./cart-er-admin/src/Admin.vue').default);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-//
-
-// const app = new Vue({
-//     el: '#app',
-// });
-
-// new Vue({
-//     el: '#app',
-//     router,
-//     store
-//
-// })
 
 new Vue({
     el: '#admin',

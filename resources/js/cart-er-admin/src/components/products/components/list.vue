@@ -51,7 +51,6 @@
 <script lang="js">
     import { mapState } from 'vuex';
     export default {
-
         name: 'productlist',
         data () {
             return {
@@ -64,7 +63,8 @@
                 }, {
                     text: 'Library',
                     active: true
-                }]
+                }],
+                arrProductList:[]
             }
         },
         created() {
@@ -72,13 +72,13 @@
         },
         methods:{
             getProductList() {
-                this.$store.dispatch('getProductList');
+                // this.$store.dispatch('getProductList');
             }
         },
         computed: {
-            ...mapState([
-                'arrProductList',
-            ]),
+            // ...mapState([
+            //     'arrProductList',
+            // ]),
         },
     }
 </script>

@@ -4,7 +4,7 @@ export default {
         axios.get('api/admin/products')
             .then(response => {
                 if(response.status == 200){
-                    commit('setProductList',response.data)
+                    commit('setProductList', response.data)
                 }
             }).catch(error => {
             console.log(error)
