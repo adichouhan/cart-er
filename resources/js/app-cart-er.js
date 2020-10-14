@@ -6,15 +6,15 @@
 import Vue from 'vue'
 import router from './cart-er-admin/src/router'
 import BootstrapVue from 'bootstrap-vue'
-import axios from 'axios'
-
-import { store } from './cart-er-admin/src/store/';
+import VueCookies from 'vue-cookies'
 require('./bootstrap');
 
 window.Vue = require('vue');
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
+
+Vue.use(VueCookies)
 
 
 
@@ -25,6 +25,13 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+
+let bearerToken = this.cookies.get('bearer_token');
+if (bearerToken) {
+    window.axios.defaults.headers.common['Authorization'] = `Bearer ${bearerToken}`
+}
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -37,8 +44,6 @@ if (token) {
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-// Vue.component('app', require('./cart-er-admin/src/App.vue').default);
 Vue.component('admin', require('./cart-er-admin/src/Admin.vue').default);
 
 /**

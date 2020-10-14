@@ -54,8 +54,13 @@ export default {
     login () {
       console.log('sdfsd')
       // Submit the form via a POST request
-      this.form.post('v1/auth/login')
-              .then(({ data }) => { console.log(data) })
+      this.form.post('api/login')
+              .then((response) => {
+                if(response.data.status == 200){
+                  this.$cookies.set("bearer_token", response.data.access_token)
+                  this.store.commit('')
+                }
+              })
     }
   }
 

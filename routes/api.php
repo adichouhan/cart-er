@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Auth Endpoints
-Route::group(['middleware' => 'guest:api'], function ($router) {
-    Route::post('login', 'Auth\ApiAuthController@login');
-});
+Route::post('login', 'Auth\ApiAuthController@login');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

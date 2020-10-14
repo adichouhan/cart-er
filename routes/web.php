@@ -12,12 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Auth Endpoints
-Route::group([
-    'prefix' => 'v1/auth'
-], function ($router) {
-    Route::post('login', 'Auth\ApiAuthController@login');
-});
 
 Route::get('/admin', function () {
     return view('admin.admin');
@@ -27,12 +21,6 @@ Route::get('{path}', function () {
     return view('admin.admin');
 })->where('path', '(.*)');
 
-// Auth Endpoints
-Route::group([
-    'prefix' => 'v1/auth'
-], function ($router) {
-    Route::post('login', 'Auth\ApiAuthController@login');
-});
 
 //
 //Route::get('/', function () {
