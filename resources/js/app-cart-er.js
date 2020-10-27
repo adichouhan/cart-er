@@ -7,6 +7,7 @@ import Vue from 'vue'
 import router from './cart-er-admin/src/router'
 import BootstrapVue from 'bootstrap-vue'
 import VueCookies from 'vue-cookies'
+import store from './cart-er-admin/src/store/store'
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -26,7 +27,7 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-let bearerToken = this.cookies.get('bearer_token');
+let bearerToken = Vue.$cookies.get('bearer_token');
 if (bearerToken) {
     window.axios.defaults.headers.common['Authorization'] = `Bearer ${bearerToken}`
 }
