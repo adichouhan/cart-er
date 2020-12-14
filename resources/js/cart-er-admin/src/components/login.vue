@@ -51,16 +51,13 @@ export default {
   },
 
   methods: {
-    login () {
-      console.log('sdfsd')
-      // Submit the form via a POST request
-      this.form.post('api/login')
-              .then((response) => {
-                if(response.data.status == 200){
-                  this.$cookies.set("bearer_token", response.data.access_token)
-                  this.store.commit('')
-                }
-              })
+    login() {
+      this.$store.dispatch('getAuthenticateUserLogin', {
+        email: this.email,
+        password: this.password,
+        router: this.$router,
+        form : this.form
+      });
     }
   }
 

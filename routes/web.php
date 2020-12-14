@@ -17,10 +17,9 @@ Route::get('/admin', function () {
     return view('admin.admin');
 });
 
-Route::get('{path}', function () {
+Route::get('/{any}', function () {
     return view('admin.admin');
-})->where('path', '(.*)');
-
+})->where('any', '^(?!api).*$');
 
 //
 //Route::get('/', function () {

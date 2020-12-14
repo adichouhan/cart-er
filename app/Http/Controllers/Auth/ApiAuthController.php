@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\ApiController;
+use App\User;
 use Illuminate\Http\Request;
 
 
@@ -16,7 +17,9 @@ class ApiAuthController extends ApiController
      */
     public function login()
     {
+
         $credentials = request(['email', 'password']);
+
         if (! auth()->attempt($credentials)) {
             return $this->responseUnauthorized();
         }

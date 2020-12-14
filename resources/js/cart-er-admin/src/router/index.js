@@ -42,12 +42,14 @@ const routes =  [
   {
     path: '/',
     name: 'dashboard',
-    component: dashboard
+    component: dashboard,
+    meta: { requiresAuth: true }
   },
   {
     path: '/widgets',
     name: 'widgets',
-    component: widgets
+    component: widgets,
+    meta: { requiresAuth: true }
   },
   {
     path: '/404',
@@ -67,78 +69,93 @@ const routes =  [
   {
     path: '/register',
     name: 'register',
-    component: register
+    component: register,
+    meta: { requiresAuth: true }
   },
   {
     path: '/alerts',
     name: 'alerts',
-    component: alerts
+    component: alerts,
+    meta: { requiresAuth: true }
   },
   {
     path: '/badges',
     name: 'badges',
-    component: badges
+    component: badges,
+    meta: { requiresAuth: true }
   },
   {
     path: '/breadcrumbs',
     name: 'breadcrumbs',
-    component: breadcrumbs
+    component: breadcrumbs,
+    meta: { requiresAuth: true }
   },
   {
     path: '/buttons',
     name: 'buttons',
-    component: buttons
+    component: buttons,
+    meta: { requiresAuth: true }
   },
   {
     path: '/carousel',
     name: 'carousel',
-    component: carousel
+    component: carousel,
+    meta: { requiresAuth: true }
   },
   {
     path: '/dropdowns',
     name: 'dropdowns',
-    component: dropdowns
+    component: dropdowns,
+    meta: { requiresAuth: true }
   },
   {
     path: '/icons',
     name: 'icons',
-    component: icons
+    component: icons,
+    meta: { requiresAuth: true }
   },
   {
     path: '/modals',
     name: 'modals',
-    component: modals
+    component: modals,
+    meta: { requiresAuth: true }
   },
   {
     path: '/paginations',
     name: 'paginations',
-    component: paginations
+    component: paginations,
+    meta: { requiresAuth: true }
   },
   {
     path: '/progress',
     name: 'progress',
-    component: progress
+    component: progress,
+    meta: { requiresAuth: true }
   },
   {
     path: '/tables',
     name: 'tables',
-    component: tables
+    component: tables,
+    meta: { requiresAuth: true }
   },
   {
     path: '/typography',
     name: 'typography',
-    component: typography
+    component: typography,
+    meta: { requiresAuth: true }
   },
   {
     path: '/tabs',
     name: 'tabs',
-    component: tabs
+    component: tabs,
+    meta: { requiresAuth: true }
   },
 
   {
     path: '/tooltips',
     name: 'tooltips',
-    component: tooltips
+    component: tooltips,
+    meta: { requiresAuth: true }
   },
   {
     path: '/forms',
@@ -151,14 +168,26 @@ const routes =  [
 ]
 
  const router = new Router({
+  base: '/#!',
   mode: 'history',
   routes
 })
 
 router.beforeEach((to, from, next) => {
-  let isAuthenticated = false;
-  if (to.name !== 'login' && !isAuthenticated) next({ name: 'login' })
-  else next()
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+
+    if (localStorage.getItem('is_logged_in') == true || localStorage.getItem('is_logged_in') == 'true') {
+      next()
+    } else {
+      next({
+        path: '/login'
+      })
+    }
+  } else {
+    next()
+  }
 })
 
 export default router;

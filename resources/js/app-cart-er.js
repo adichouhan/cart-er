@@ -27,7 +27,7 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-let bearerToken = Vue.$cookies.get('bearer_token');
+let bearerToken = sessionStorage.getItem('user_session_key');
 if (bearerToken) {
     window.axios.defaults.headers.common['Authorization'] = `Bearer ${bearerToken}`
 }
