@@ -23,17 +23,17 @@ export default {
 
     //To authenticate user Details
     getAuthenticateUserLogin(context, payload) {
-        this.form.post('api/login')
+        payload.form.post('/api/login')
             .then((response) => {
                 // console.log("OK")
                 console.log(response)
                 // console.log(response.data)
                 if(200 === response.data.status){
                     context.commit('setErrors', {errors:  false});
-                    context.commit('setUserProfile', {responseData: response.data.data});
+                    context.commit('setUserProfile', {responseData: response.data});
                     context.commit('setLoginStatus', {boolLoggedIn: true})
-                    payload.router.push('/');
                     context.commit('showLoading', {boolShowLoading: false});
+                    payload.router.push('/dashboard')
                 }
                 else {
                     context.commit('setErrors', {errors:  [response.data.error.message]});

@@ -40,7 +40,7 @@ Vue.use(Router)
 
 const routes =  [
   {
-    path: '/',
+    path: '/dashboard',
     name: 'dashboard',
     component: dashboard,
     meta: { requiresAuth: true }
@@ -168,7 +168,7 @@ const routes =  [
 ]
 
  const router = new Router({
-  base: '/#!',
+  base: 'admin',
   mode: 'history',
   routes
 })
@@ -177,7 +177,8 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     // this route requires auth, check if logged in
     // if not, redirect to login page.
-
+   console.log('localStorage');
+   console.log(localStorage);
     if (localStorage.getItem('is_logged_in') == true || localStorage.getItem('is_logged_in') == 'true') {
       next()
     } else {

@@ -36,7 +36,7 @@
 </template>
 
 <script lang="js">
-  import Form from 'vform'
+import Form from 'vform'
 export default {
   name: 'login',
   data () {

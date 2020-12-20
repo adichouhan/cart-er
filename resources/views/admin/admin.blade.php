@@ -16,5 +16,5 @@
 </div>
 
 </body>
-<script src="js/app-cart-er.js"></script>
+<script src={{url("js/app-cart-er.js")}}></script>
 </html>

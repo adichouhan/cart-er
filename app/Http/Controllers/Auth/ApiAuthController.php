@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\ApiController;
-use App\User;
 use Illuminate\Http\Request;
 
 
@@ -12,7 +11,6 @@ class ApiAuthController extends ApiController
     /**
      * Get a JWT via given credentials.
      *
-     * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function login()

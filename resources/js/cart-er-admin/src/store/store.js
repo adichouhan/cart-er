@@ -7,7 +7,12 @@ import getters from './getters';
 Vue.use(Vuex);
 
 const state = {
-    arrProductList : ''
+    arrProductList : '',
+    userProfileDetails    :'' ,
+    userSessionKey        :'',
+    first_name            :'',
+    user_id               :'',
+    errors                :''
 };
 
 const store = new Vuex.Store({

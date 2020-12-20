@@ -9,7 +9,7 @@
                                 <h5 class="card-title mb-4">Products</h5>
                             </div>
                             <div class="col-4">
-                                <b-button variant="primary" class="pull-right"><router-link class="nav-link" to="/product/create">Create Product</router-link></b-button>
+                                <b-button variant="primary" class="pull-right"><router-link class="nav-link text-white" to="/products/create">Create Product</router-link></b-button>
                             </div>
                         </div>
 
