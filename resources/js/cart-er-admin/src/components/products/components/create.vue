@@ -5,9 +5,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Add New Product</h4>
-                        <p class="card-description">
-                            Product
-                        </p>
+
 
                         <b-form-group label="Name" label-for="input5">
                             <b-form-input type="text" v-model="objProduct.name" id="name"
@@ -23,10 +21,10 @@
                         </b-form-group>
                         <b-form-group label="Unit" label-for="unit">
                             <b-form-input type="number" id="unit" v-model="objProduct.unit" placeholder="Product Unit"
-                                          name="unit"></b-form-input>
+                                          name="units"></b-form-input>
                         </b-form-group>
                         <b-form-group label="Upload Image" label-for="input8">
-                            <b-form-file id="inpu8" type="file" v-model="objProduct.image" name="image"
+                            <b-form-file id="inpu8" type="file" v-model="objProduct.image" @change="selectFile" name="image"
                                          placeholder="Choose a image..."></b-form-file>
                         </b-form-group>
 
@@ -53,7 +51,7 @@
                     price: '',
                     image: '',
                     description: '',
-                    unit: '',
+                    units: '',
 
                 },
                 errors: [],
@@ -64,8 +62,14 @@
         components: {},
         methods: {
             addProduct() {
+                console.log(this.objProduct);
                 this.$store.dispatch('addNewProduct', this.objProduct)
             },
+
+            selectFile(event) {
+                // `files` is always an array because the file input may be in multiple mode
+                this.image = event.target.files[0].name;
+            }
 
         }
     };

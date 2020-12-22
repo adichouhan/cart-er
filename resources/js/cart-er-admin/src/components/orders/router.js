@@ -4,7 +4,8 @@ const orderRouter = [
     {
         path: '/orders',
         name: 'Orders',
-        component: orderList
+        component: orderList,
+        meta: { requiresAuth: true }
     },
 ]
 

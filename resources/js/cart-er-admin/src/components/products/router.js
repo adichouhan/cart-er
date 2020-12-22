@@ -5,15 +5,18 @@ const productRouter = [
     {
         path: '/products',
         name: 'Products',
-        component: productList
+        component: productList,
+        meta: { requiresAuth: true }
     },
     {
         path: '/products/create',
-        component: productCreate
+        component: productCreate,
+        meta: { requiresAuth: true }
     },
     {
         path: '/products/create',
-        component: productList
+        component: productList,
+        meta: { requiresAuth: true }
     },
 ]
 

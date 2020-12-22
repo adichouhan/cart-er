@@ -24,9 +24,16 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        dd($request->all());
+        try {
+            \DB::enableQueryLog();
+            Product::create($request->all());
+            dd(\DB::getQueryLog());
+        }catch (\Exception $e){
+            dd($e);
+        }
     }
 
     /**

@@ -168,7 +168,6 @@ const routes =  [
 ]
 
  const router = new Router({
-  base: 'admin',
   mode: 'history',
   routes
 })
@@ -177,13 +176,11 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     // this route requires auth, check if logged in
     // if not, redirect to login page.
-   console.log('localStorage');
-   console.log(localStorage);
     if (localStorage.getItem('is_logged_in') == true || localStorage.getItem('is_logged_in') == 'true') {
       next()
     } else {
       next({
-        path: '/login'
+        name: 'login'
       })
     }
   } else {

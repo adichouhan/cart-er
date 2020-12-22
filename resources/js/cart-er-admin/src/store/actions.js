@@ -1,7 +1,7 @@
 import axios from 'axios'
 export default {
     getProductList({commit}) {
-        axios.get('api/admin/products')
+        axios.get('products')
             .then(response => {
                 if(response.status == 200){
                     commit('setProductList', response.data)
@@ -11,7 +11,7 @@ export default {
         })
     },
     addNewProduct({commit}, payload) {
-        axios.post('/add/product', payload)
+        axios.post('/api/admin/products/add', payload)
             .then(response => {
 
             }).catch(error => {
@@ -25,7 +25,6 @@ export default {
     getAuthenticateUserLogin(context, payload) {
         payload.form.post('/api/login')
             .then((response) => {
-                // console.log("OK")
                 console.log(response)
                 // console.log(response.data)
                 if(200 === response.data.status){

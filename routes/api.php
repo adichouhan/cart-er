@@ -21,5 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['namespace' => '\App\Http\Controllers', 'prefix'=>'admin', 'middleware' => 'auth:api' ], function() {
-   Route::get('/products', 'ProductController@getProductList');
+    Route::group(['namespace' => '\App\Http\Controllers', 'prefix'=>'products', 'middleware' => 'auth:api' ], function() {
+        Route::get('/', 'ProductController@getProductList');
+        Route::post('/add', 'ProductController@create');
+    });
 });
