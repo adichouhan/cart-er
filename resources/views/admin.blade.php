@@ -104,5 +104,5 @@
         {{--</div>--}}
 
     </body>
-    <script src="js/app.js"></script>
+    <script src="url('js/app.js')"></script>
 </html>

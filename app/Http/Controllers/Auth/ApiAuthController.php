@@ -18,12 +18,12 @@ class ApiAuthController extends ApiController
 
         $credentials = request(['email', 'password']);
 
-        if (! auth()->attempt($credentials)) {
+        if (! auth('web')->attempt($credentials)) {
             return $this->responseUnauthorized();
         }
 
         // Get the user data.
-        $user = auth()->user();
+        $user = auth('web')->user();
         $token = $user->createToken('myApp')-> accessToken;
         return response()->json([
             'status' => 200,
