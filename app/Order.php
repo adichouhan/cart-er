@@ -1,15 +1,18 @@
 <?php
+
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Order extends Model
 {
-    use SoftDeletes;
+    use HasFactory;
+    protected $table = 'orders';
 
     protected $fillable = [
-        'product_id', 'user_id', 'quantity', 'address'
+        'order_number', 'user_id', 'status', 'grand_total', 'item_count', 'payment_status', 'payment_method',
+        'first_name', 'last_name', 'address', 'city', 'country', 'post_code', 'phone_number', 'notes'
     ];
 
     public function user()
@@ -17,9 +20,8 @@ class Order extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function product()
+    public function items()
     {
-        return $this->belongsTo(Product::class, 'product_id');
+        return $this->hasMany(OrderItem::class);
     }
-
 }

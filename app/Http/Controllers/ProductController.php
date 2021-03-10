@@ -26,7 +26,7 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        dd($request->all());
+
         try {
             \DB::enableQueryLog();
             Product::create($request->all());

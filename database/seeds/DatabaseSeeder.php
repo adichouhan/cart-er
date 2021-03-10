@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             ProductsTableSeeder::class,
         ]);
+        $this->call(AttributesTableSeeder::class);
     }
 }

@@ -15,10 +15,23 @@
         </li>
 
         <li class="nav-item"><router-link class="nav-link" to="/dashboard"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Dashboard</span></router-link></li>
-        <li class="nav-item"><router-link class="nav-link" to="/products"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Product</span></router-link></li>
+       
         <li class="nav-item"><router-link class="nav-link" to="/orders"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Order</span></router-link></li>
         <li class="nav-item"><router-link class="nav-link" to="/login"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">login</span></router-link></li>
         <li class="nav-item"><router-link class="nav-link" to="/widgets/"><img class="menu-icon" src="../../assets/images/menu_icons/02.png" alt="menu icon"><span class="menu-title">Widgets</span></router-link></li>
+        
+        <li class="nav-item">
+          <span class="nav-link" v-b-toggle="'catalogue'">
+            <img class="menu-icon" src="../../assets/images/menu_icons/08.png" alt="menu icon"><span class="menu-title">Catalogue</span><i class="menu-arrow"></i>
+          </span>
+          <b-collapse id="catalogue">
+            <ul class="nav flex-column sub-menu">
+               <li class="nav-item"><router-link class="nav-link" to="/products"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Product</span></router-link></li>
+               <li class="nav-item"><router-link class="nav-link" to="/categories"><img class="menu-icon" src="../../assets/images/menu_icons/01.png" alt="menu icon"><span class="menu-title">Categories</span></router-link></li>
+            </ul>
+          </b-collapse>
+        </li>
+        
         <li class="nav-item">
           <span class="nav-link" v-b-toggle="'sample-pages'">
             <img class="menu-icon" src="../../assets/images/menu_icons/08.png" alt="menu icon"><span class="menu-title">Sample Pages</span><i class="menu-arrow"></i>

@@ -54,17 +54,7 @@
         name: 'productlist',
         data () {
             return {
-                items: [{
-                    text: 'Admin',
-                    href: '#'
-                }, {
-                    text: 'Manage',
-                    href: '#'
-                }, {
-                    text: 'Library',
-                    active: true
-                }],
-                arrProductList:[]
+                            
             }
         },
         created() {
@@ -72,13 +62,13 @@
         },
         methods:{
             getProductList() {
-                // this.$store.dispatch('getProductList');
+                this.$store.dispatch('getProductList');
             }
         },
         computed: {
-            // ...mapState([
-            //     'arrProductList',
-            // ]),
+            ...mapState([
+                'arrProductList',
+            ]),
         },
     }
 </script>

@@ -41,7 +41,7 @@ class CreateBillingAddress extends Migration
             $table->string('shipping_method');
             $table->decimal('shipping_cost', 18, 4)->unsigned();
             $table->foreign('customer_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+
             $table->timestamps();
         });
     }
