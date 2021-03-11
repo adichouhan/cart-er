@@ -14,10 +14,8 @@ class AlterProductAttributesTable extends Migration
     public function up()
     {
         Schema::table('product_attributes', function (Blueprint $table) {
-
-            $table->unsignedInteger('attribute_id')->after('id');
-            $table->foreign('attribute_id')->references('id')->on('attributes');
-
+            $table->unsignedBigInteger('attribute_id');
+            $table->foreign('attribute_id')->references('id')->on('attributes')->onDelete('cascade');
             $table->string('value')->after('attribute_id');
         });
     }

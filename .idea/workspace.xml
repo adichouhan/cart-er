@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd1d10d0-d8f9-48a9-a20a-e5d968f49823" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cart-er.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cart-er.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_053022_create_orders_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_09_054308_create_billing_address.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_09_054308_create_billing_address.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_02_090530_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_02_090530_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/partials/AppSidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/components/create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/components/create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/components/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/components/products/components/list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/cart-er-admin/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_05_142835_create_attribute_values_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_05_142835_create_attribute_values_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_09_124642_create_product_attributes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_09_124642_create_product_attribute_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_10_061212_create_product_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_10_061212_create_product_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_10_062601_alter_product_attributes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_10_062601_alter_product_attributes_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -453,7 +439,7 @@
       <workItem from="1615089294426" duration="606000" />
       <workItem from="1615291747329" duration="6000" />
       <workItem from="1615291778759" duration="3928000" />
-      <workItem from="1615351210911" duration="5821000" />
+      <workItem from="1615351210911" duration="11433000" />
     </task>
     <servers />
   </component>
