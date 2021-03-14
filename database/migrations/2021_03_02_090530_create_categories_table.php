@@ -20,10 +20,10 @@ class CreateCategoriesTable extends Migration
             $table->text('description')->nullable();
             $table->boolean('featured')->default(0);
             $table->boolean('menu')->default(1);
-            $table->string('category_logo');
-            $table->string('category_banner');
-            $table->integer('parent_category_id');
-            $table->boolean('status');
+            $table->string('category_logo')->nullable();
+            $table->string('category_banner')->nullable();
+            $table->integer('parent_category_id')->nullable();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }

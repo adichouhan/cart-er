@@ -6,6 +6,7 @@ import dashboard from '../views/dashboard'
 import orderRouter from '../components/orders/router'
 import productRouter from '../components/products/router'
 import categoryRouter from '../components/categories/router'
+import settingsRouter from '../components/settings/router'
 
 
 // Widgets
@@ -165,7 +166,8 @@ const routes =  [
   },
   ...orderRouter,
   ...productRouter,
-  ...categoryRouter
+  ...categoryRouter,
+  ...settingsRouter
 
 ]
 
